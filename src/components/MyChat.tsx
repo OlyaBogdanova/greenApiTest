@@ -32,10 +32,10 @@ const MyChat = (props: Props) => {
                     }
                 }
             });
-        }, 2000);
+        }, 6500);
 
         return () => clearInterval(intervalId);
-    }, [id]);
+    }, []);
 
     function sendMessage(e: React.KeyboardEvent<HTMLTextAreaElement>) {
         if (e.key === 'Enter') {
