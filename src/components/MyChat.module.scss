@@ -1,0 +1,76 @@
+@import '../styles/variables.scss';
+.container {
+    min-height: calc(100vh - 40px);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.top_panel {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+.bottom_panel {
+    width: 100%;
+    background-color: transparent;
+    flex: 0 0 10%;
+}
+.textArea {
+    width: 100%;
+    resize: vertical;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid $greenBaseColor;
+    outline: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+    resize: none;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    font-size: 16px;
+    &:focus {
+        border: 2px solid $pinkBaseColor;
+    }
+}
+.myMes,
+.guest {
+    width: auto;
+    max-width: 80%;
+    margin: 5px 0px;
+    padding: 5px;
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    word-break: break-all;
+}
+.myMes {
+    background-color: rgb(243, 168, 147);
+    align-self: end;
+    border-radius: 5px 0px 0px 5px;
+    justify-content: end;
+}
+.myMes::after {
+    content: '';
+    position: absolute;
+    right: -18px;
+    top: calc(50% - 10px);
+    border: 10px solid transparent;
+    border-left: 10px solid rgb(243, 168, 147);
+}
+
+.guest {
+    background-color: rgb(139, 194, 185);
+    align-self: start;
+    justify-content: start;
+    border-radius: 0px 5px 5px 0px;
+}
+.guest::after {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top: calc(50% - 10px);
+    border: 10px solid transparent;
+    border-right: 10px solid rgb(139, 194, 185);
+}

@@ -1,0 +1,25 @@
+.phoneForm {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    input {
+        margin-bottom: 0;
+        margin-right: 5px;
+        width: 30%;
+    }
+}
+@media (max-width: 500px) {
+    .phoneForm {
+        flex-direction: column;
+        input {
+            margin-bottom: 5px;
+            margin-right: 0px;
+            width: 70%;
+        }
+        button {
+            width: 70%;
+        }
+    }
+}
