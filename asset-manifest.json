@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/greenApiTest/static/css/main.2b1ae2cd.css",
+    "main.js": "/greenApiTest/static/js/main.9d895c88.js",
+    "static/media/bg4.jpg": "/greenApiTest/static/media/bg4.b20d68baf8ed4ae0f666.jpg",
+    "index.html": "/greenApiTest/index.html",
+    "main.2b1ae2cd.css.map": "/greenApiTest/static/css/main.2b1ae2cd.css.map",
+    "main.9d895c88.js.map": "/greenApiTest/static/js/main.9d895c88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b1ae2cd.css",
+    "static/js/main.9d895c88.js"
+  ]
+}
